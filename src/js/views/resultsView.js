@@ -5,7 +5,6 @@ class ResultsView extends View {
   _parentElement = document.querySelector('.results');
   _errorMessage =
     "Sorry, couldn't find any recipes matching your search. Could you try a different dish or ingredient?";
-  // _successMessage = 'Recipe was successfully created!';
 
   _generateHTML() {
     console.log(this._data);

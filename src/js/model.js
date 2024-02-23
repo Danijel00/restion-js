@@ -43,7 +43,6 @@ export const loadRecipe = async function (id) {
       console.log(state.recipe);
     }
   } catch (err) {
-    // alert('Error: ' + err);
     console.log(`${err} 🌋🌋🌋`);
     throw err;
   }
@@ -152,7 +151,7 @@ export const uploadRecipe = async function (newRecipe) {
         // const ingArr = ing[1].replaceAll(' ', '').split(',');
         // Required all 3 values as input
         if (ingArr.length !== 3) {
-          // throw new Error('All three values are needed!');
+          throw new Error('All three values are needed!');
         }
 
         // Replace first value with second
